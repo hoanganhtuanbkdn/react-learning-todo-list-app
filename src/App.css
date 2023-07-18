@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+.container {
+	width: 100vw;
+	min-height: 100vh;
+	background: #3f72af;
+	padding-top: 56px;
+	display: flex;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+	width: 600px;
+	min-height: 450px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	background: #f9f7f7;
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+	padding: 20px 55px 85px 55px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-header {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10ppx;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-input {
+	width: 250px;
+	height: 32px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 5px;
+	border: 1px solid rgba(177, 177, 177, 0.4);
+	background: #dbe2ef;
 }
 
-.App-link {
-  color: #61dafb;
+.card-input input {
+	display: flex;
+	flex: 1;
+	background: #dbe2ef;
+	border: none;
+}
+.card-input button {
+	width: 45px;
+	height: 32px;
+	display: flex;
+	border-radius: 0px 5px 5px 0px;
+	background: #aaa;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+h1 {
+	font-family: Ubuntu;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: #112d4e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divide {
+	width: 100%;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.5);
+	margin-top: 15px;
+	margin-bottom: 14px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.item {
+	height: 55px;
+	width: 100%;
+	border-radius: 5px;
+	background: #dbe2ef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.item p {
+	color: #000;
+	font-family: Ubuntu;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.item button {
+	width: 24px;
+	height: 24px;
+	border: 1px #7d7c7c solid;
+	border-radius: 6px;
+
+	position: absolute;
+	left: 20px;
+	z-index: 100;
 }
